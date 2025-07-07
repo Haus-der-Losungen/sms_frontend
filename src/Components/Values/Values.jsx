@@ -1,7 +1,7 @@
-import { Cross, Book, Users } from "lucide-react";
-import value1 from "../../assets/value1.jpg";
-import value2 from "../../assets/value2.jpg";
-import value3 from "../../assets/value3.jpg";
+import { Cross, BookOpen, Users } from "lucide-react";
+import value1 from "../../assets/value1.png";
+import value2 from "../../assets/value2.png";
+import value3 from "../../assets/value3.png";
 
 const cardData = [
   {
@@ -11,7 +11,7 @@ const cardData = [
   },
   {
     image: value2,
-    icon: <Book size={40} />,
+    icon: <BookOpen size={40} />,
     text: "Academic Excellence",
   },
   {

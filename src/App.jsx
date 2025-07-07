@@ -2,6 +2,7 @@ import { useState } from "react";
 import Navbar from "./Components/Navbar/Navbar";
 import Hero from "./Components/Hero/Hero";
 import Values from "./Components/Values/Values";
+import Background from "./Components/Background/Background";
 
 const App = () => {
   const heroData = [
@@ -14,6 +15,7 @@ const App = () => {
 
   return (
     <div className="min-h-screen relative">
+      <Background />
    
       <Navbar isOpen={isSidebarOpen} setIsOpen={setIsSidebarOpen} />
 
