@@ -23,23 +23,19 @@ const cardData = [
 
 const Values = () => {
   return (
-   <section className="flex flex-col md:flex-row w-full h-[900px] md:h-[400px] px-4 py-8">
-
+    <section className="grid grid-cols-1 md:grid-cols-3 w-full h-96 md:h-64">
       {cardData.map((card, index) => (
         <div
           key={index}
-          className="flex-1 relative flex items-center justify-center text-white"
+          className="relative  flex items-center justify-center text-white"
           style={{
             backgroundImage: `url(${card.image})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
         >
-   
-          <div className="absolute inset-0 bg-black/50" />
-
-        
-          <div className="relative z-10 text-center px-4">
+          <div className="absolute text-center inset-0 bg-[#800020]/50" />
+          <div className="relative flex flex-col items-center ">
             <div className="mb-2">{card.icon}</div>
             <p className="text-lg md:text-xl font-semibold">{card.text}</p>
           </div>

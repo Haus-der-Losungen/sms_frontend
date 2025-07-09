@@ -5,3 +5,9 @@ body{
   padding: 0;
 }
 
+.debug{
+  border: 1px dashed red
+}
+.debug-bg{
+  background: red;
+}
