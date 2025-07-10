@@ -11,7 +11,7 @@ const NavLinks = ({ vertical = false, onClick = () => {} }) => {
 
   return (
     <div className={`flex ${layout} ${textColor} font-medium text-lg`}>
-      <NavLink to="/home" onClick={onClick}>
+      <NavLink to="/" onClick={onClick}>
         Home
       </NavLink>
       <NavLink to="/about" onClick={onClick}>
@@ -40,7 +40,7 @@ const Navbar = () => {
         ></div>
       )}
 
-      <nav className="fixed top-0 z-50 w-full bg-[#800020]">
+      <nav className="px-6 md: fixed top-0 z-50 w-full bg-[#800020]">
         <div className="max-w-screen-xl mx-auto md: flex items-center justify-between py-4">
           <div className="flex items-center gap-2">
             <Logo />

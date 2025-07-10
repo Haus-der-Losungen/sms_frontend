@@ -1,22 +1,36 @@
 import { useState } from "react";
+import { Routes, Route } from "react-router-dom";
+
 import Navbar from "./Components/Navbar/Navbar";
 import Values from "./Components/Values/Values";
-// import Background from "./Components/Background/Background";
 import HeroWithCarousel from "./Components/Hero";
 import Footer from "./Components/Footer";
+import PortalLogin from "./Pages/PortalLogin"; // the login page
 
 const App = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   return (
-    <div className="min-h-screen ">
+    <div className="min-h-screen">
       <Navbar isOpen={isSidebarOpen} setIsOpen={setIsSidebarOpen} />
+
       {isSidebarOpen && (
         <div className="fixed inset-0 bg-white/40 backdrop-blur-sm z-30 md:hidden" />
       )}
-      <HeroWithCarousel />
-      <Values />
-      <Footer />
+
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <HeroWithCarousel />
+              <Values />
+              <Footer />
+            </>
+          }
+        />
+        <Route path="/portal" element={<PortalLogin />} />
+      </Routes>
     </div>
   );
 };

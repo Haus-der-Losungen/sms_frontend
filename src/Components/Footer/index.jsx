@@ -29,17 +29,17 @@ const Footer = () => {
           <h3 className="font-semibold text-lg mb-4">Useful Links</h3>
           <ul className="space-y-2">
             <li>
-              <a href="#" className="hover:underline">
+              <a href="/" className="hover:underline">
                 Home
               </a>
             </li>
             <li>
-              <a href="#" className="hover:underline">
+              <a href="/about" className="hover:underline">
                 About
               </a>
             </li>
             <li>
-              <a href="#" className="hover:underline">
+              <a href="portal" className="hover:underline">
                 Portal
               </a>
             </li>
