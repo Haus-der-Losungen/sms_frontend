@@ -29,58 +29,57 @@ const heroData = [
 
 function HeroWithCarousel() {
   return (
-    <Carousel
-      withIndicators
-      height={800}
-      className="h-[90vh]"
-      controlSize={40}
-      emblaOptions={{
-        loop: true,
-        dragFree: false,
-        align: "center",
-      }}
-      styles={{
-        indicator: {
-          width: 12,
-          height: 12,
-          borderRadius: "50%",
-          backgroundColor: "#800125",
-          transition: "background-color 150ms ease",
-        },
-        indicatorActive: {
-          backgroundColor: "#800020",
-        },
-        control: {
-          backgroundColor: "#800020",
-          color: "#fff",
-          "&:hover": {
-            backgroundColor: "#000000cc",
+    <div className="relative z-0">
+      <Carousel
+        withIndicators
+        height="100vh"
+        className="h-[90vh]"
+        controlSize={40}
+        emblaOptions={{
+          loop: true,
+          dragFree: false,
+          align: "center",
+        }}
+        styles={{
+          indicator: {
+            width: 12,
+            height: 12,
+            borderRadius: "50%",
+            backgroundColor: "#800125",
+            transition: "background-color 150ms ease",
           },
-        },
-      }}
-    >
-      {heroData.map((data, index) => (
-        <Carousel.Slide key={index}>
-          <div
-            className="relative h-full w-full bg-cover bg-center"
-            style={{ backgroundImage: `url(${data.image})` }}
-          >
-            {/* Dark overlay */}
-            <div className="absolute inset-0 bg-black opacity-60 z-0" />
-
-            {/* Text Content */}
-            <div className="relative z-10 h-full flex flex-col items-center justify-center text-white text-center px-4">
-              <h1 className="text-xl md:text-2xl mb-4 drop-shadow-md">
-                {data.text1}
-              </h1>
-              <p className="text-4xl md:text-6xl font-bold drop-shadow-lg">
-                {data.text2}
-              </p>
+          indicatorActive: {
+            backgroundColor: "#800020",
+          },
+          control: {
+            backgroundColor: "#800020",
+            color: "#fff",
+            "&:hover": {
+              backgroundColor: "#000000cc",
+            },
+          },
+        }}
+      >
+        {heroData.map((data, index) => (
+          <Carousel.Slide key={index}>
+            <div
+              className="relative h-screen w-full bg-cover bg-center"
+              style={{ backgroundImage: `url(${data.image})` }}
+            >
+              <div className="absolute inset-0 bg-black opacity-60 z-0" />
+              <div className="relative z-10 h-full flex flex-col items-center justify-center text-white text-center px-4">
+                <h1 className="text-xl md:text-2xl mb-4 drop-shadow-md">
+                  {data.text1}
+                </h1>
+                <p className="text-4xl md:text-6xl bg-[rgba(128,0,32,0.6)] rounded px-4 py-2 font-bold drop-shadow-lg">
+                  {data.text2}
+                </p>
+              </div>
             </div>
-          </div>
-        </Carousel.Slide>
-      ))}
-    </Carousel>
+          </Carousel.Slide>
+        ))}
+      </Carousel>
+    </div>
   );
 }
 
