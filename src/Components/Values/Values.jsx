@@ -23,7 +23,8 @@ const cardData = [
 
 const Values = () => {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-3 w-full min-h-[300px] md:min-h-[300px] z-10 relative">
+    <section className="grid grid-cols-1 md:grid-cols-3 w-full min-h-[300px] md:min-h-[30
+    0px] z-10 relative">
 
       {cardData.map((card, index) => (
         <div
