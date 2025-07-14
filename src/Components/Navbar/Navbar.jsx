@@ -51,8 +51,8 @@ const Navbar = () => {
           <div className="flex items-center gap-2">
             <Logo />
             <div className="text-white leading-tight">
-              <p className="text-4xl uppercase font-bold">Fidif</p>
-              <p className="text-sm">School Complex</p>
+              <p className="text-5xl uppercase font-rokkitt font-bold">Fidif</p>
+              <p className="text-sm">SCHOOL COMPLEX</p>
             </div>
           </div>
 

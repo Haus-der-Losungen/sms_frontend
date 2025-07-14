@@ -2,11 +2,11 @@ import { Facebook, Phone, Mail, MessageSquare } from "lucide-react";
 import logo from "../../assets/logo.png"; // update path as needed
 
 
-const Footer = ({bgColor = 'bg-[#800020]'}) => {
+const Footer = ({bgColor = 'bg-[#8B0000]'}) => {
   return (
     <footer className={`${bgColor} text-white pt-10`}>
  
-      <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 pb-10">
+      <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 pb-10 ">
    
         <div className="flex flex-col">
           <div className="flex items-center gap-4 mb-4">
