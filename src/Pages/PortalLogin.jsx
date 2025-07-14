@@ -45,7 +45,7 @@ const PortalLogin = () => {
    
       <div className="w-full max-w-6xl flex items-center gap-4 mb-6">
         <img src={logo2} alt="FIDIF Logo" className="ml-6  md:w-20 h-20 object-contain" />
-        <div className="text-black">
+        <div className="text-gray-700">
           <h1 className="text-3xl font-bold">Fidif School</h1>
           <h2 className="text-2xl font-semibold">Complex</h2>
         </div>
@@ -64,7 +64,7 @@ const PortalLogin = () => {
 
        {/* Message body */}
        <div className="p-4">
-      <p className="text-sm text-black font-semibold leading-relaxed">
+      <p className="text-sm text-gray-700 font-semibold leading-relaxed">
         If you haven’t registered yet, visit Admin to: <br />
       <span className="font-bold">
         Apply, Register, Update Details, View Info, and Make Payments.
@@ -119,7 +119,7 @@ const PortalLogin = () => {
             </p>
 
             {/* Contact Info */}
-            <div className="text-sm space-y-1 text-[#333] mt-2">
+            <div className="text-sm space-y-1 text-gray-700 mt-2">
               <div className="flex items-center gap-2">
                 <Mail size={16} />
                 <span className="font-semibold">fidifschoolcomplex2011@gmail.com</span>

@@ -6,9 +6,9 @@ import Navbar from "./Components/Navbar/Navbar";
 import Values from "./Components/Values/Values";
 import HeroWithCarousel from "./Components/Hero";
 import Footer from "./Components/Footer";
-import PortalLogin from "./Pages/PortalLogin"; // the login page
+import PortalLogin from "./Pages/PortalLogin"; 
+import Overview from "./Components/Overview";
 import AboutUs from "./Pages/AboutUs";
-import Overview from "./Components/Overview"; // the overview section
 
 const App = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -44,6 +44,7 @@ const App = () => {
         />
 
         <Route path="/portal" element={<PortalLogin />} />
+        <Route path="/about" element={<AboutUs />} />
        
       </Routes>
       {!isPortalPage && <Footer />}
