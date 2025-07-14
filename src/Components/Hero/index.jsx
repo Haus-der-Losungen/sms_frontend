@@ -68,7 +68,7 @@ function HeroWithCarousel() {
               style={{ backgroundImage: `url(${data.image})` }}
             >
               <div className="absolute inset-0 bg-black opacity-60 z-0" />
-              <div className="relative z-10 h-full flex flex-col items-center justify-center text-white text-center px-4">
+              <div className="relative z-10 h-full flex flex-col items-center justify-center text-white text-center px-4 font-abril">
                 <h1 className="text-xl md:text-2xl mb-4 drop-shadow-md">
                   {data.text1}
                 </h1>

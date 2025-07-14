@@ -26,10 +26,10 @@ function AboutUs() {
   const facultyMembers = [
     { name: "Mr. Dan Ansah", title: "Headmaster", image: img1 },
     { name: "Mr. Ofori Ansah", title: "Ass. Headmaster", image: img2 },
-    { name: "Mrs. Ama Mensah", title: "Head Teacher", image: img3 },
-    { name: "Mr. Kwame Nkrumah", title: "Senior Educator", image: img4 },
-    { name: "Ms. Adwoa Serwaa", title: "Curriculum Lead", image: img5 },
-    { name: "Dr. Kofi Boateng", title: "Academic Advisor", image: img6 },
+    { name: "Mr. Ofori Ansah", title: "Head Teacher", image: img3 },
+    { name: "Mr. Dan Ansah", title: "Headmaster", image: img4 },
+    { name: "Mr. Ofori Ansah", title: "Ass. Headmaster", image: img5 },
+    { name: "Mr. Ofori Ansah", title: "Head Teacher", image: img6 },
   ];
 
   const communityImages = [

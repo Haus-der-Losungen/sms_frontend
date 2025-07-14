@@ -13,7 +13,7 @@ const Footer = ({bgColor = 'bg-[#800020]'}) => {
             <img src={logo} alt="FIDIF logo" className="h-16" />
             <h2 className="text-xl sm:text-3xl font-bold font-rokkitt leading-tight">
               FIDIF{" "}
-              <span className="font-normal block sm:inline">
+              <span className="font-normal block  sm:text-xl">
                 SCHOOL COMPLEX
               </span>
             </h2>
