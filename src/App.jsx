@@ -8,6 +8,7 @@ import HeroWithCarousel from "./Components/Hero";
 import Footer from "./Components/Footer";
 import PortalLogin from "./Pages/PortalLogin"; // the login page
 import AboutUs from "./Pages/AboutUs";
+import Overview from "./Components/Overview"; // the overview section
 
 const App = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
