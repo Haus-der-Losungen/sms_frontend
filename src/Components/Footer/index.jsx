@@ -11,7 +11,7 @@ const Footer = ({bgColor = 'bg-[#8B0000]'}) => {
         <div className="flex flex-col">
           <div className="flex items-center gap-4 mb-4">
             <img src={logo} alt="FIDIF logo" className="h-16" />
-            <h2 className="text-xl sm:text-2xl font-bold leading-tight">
+            <h2 className="text-xl sm:text-3xl font-bold font-rokkitt leading-tight">
               FIDIF{" "}
               <span className="font-normal block sm:inline">
                 SCHOOL COMPLEX
@@ -27,7 +27,7 @@ const Footer = ({bgColor = 'bg-[#8B0000]'}) => {
 
         {/* Links */}
         <div>
-          <h3 className="font-semibold text-lg mb-4">Useful Links</h3>
+          <h3 className="font-semibold font-poppins text-lg mb-4">Useful Links</h3>
           <ul className="space-y-2">
             <li>
               <a href="/" className="hover:underline">
@@ -49,7 +49,7 @@ const Footer = ({bgColor = 'bg-[#8B0000]'}) => {
 
         {/* Socials */}
         <div>
-          <h3 className="font-semibold text-lg mb-4">Socials</h3>
+          <h3 className="font-semibold font-poppins text-lg mb-4">Socials</h3>
           <ul className="space-y-2">
             <li className="flex items-center gap-2">
               <Facebook size={18} /> Facebook
@@ -62,7 +62,7 @@ const Footer = ({bgColor = 'bg-[#8B0000]'}) => {
 
         {/* Contact */}
         <div>
-          <h3 className="font-semibold text-lg mb-4">Contact Us</h3>
+          <h3 className="font-semibold font-poppins text-lg mb-4">Contact Us</h3>
           <ul className="space-y-2 text-sm">
             <li className="flex items-center gap-2">
               <Phone size={16} /> +233000000000
@@ -78,7 +78,7 @@ const Footer = ({bgColor = 'bg-[#8B0000]'}) => {
       </div>
 
       {/* Footer Bottom */}
-      <div className={`bg-[#800020] border-t border-white/20 py-4 text-sm text-center md:text-left flex flex-col md:flex-row justify-between items-center gap-2 px-4`}>
+      <div className={`bg-[#800020] border-t border-white/20 py-4 text-sm text-center md:text-left flex flex-col md:flex-row justify-between items-center gap-2 px-4 font-abhaya`}>
         <p>Powered by Arcadia</p>
         <p>© 2025 Fidif School Complex. All rights reserved.</p>
         

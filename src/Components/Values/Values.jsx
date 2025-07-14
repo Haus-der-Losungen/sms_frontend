@@ -23,7 +23,7 @@ const cardData = [
 
 const Values = () => {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-3 w-full h-96 md:h-64">
+    <section className="grid grid-cols-1 md:grid-cols-3 font-abril w-full h-96 md:h-64">
       {cardData.map((card, index) => (
         <div
           key={index}
@@ -37,7 +37,7 @@ const Values = () => {
           <div className="absolute text-center inset-0 bg-[#800020]/50" />
           <div className="relative flex flex-col items-center ">
             <div className="mb-2">{card.icon}</div>
-            <p className="text-lg md:text-xl font-semibold">{card.text}</p>
+            <p className="text-lg md:text-xl font-semibold font-abril">{card.text}</p>
           </div>
         </div>
       ))}

@@ -73,7 +73,7 @@ function HeroWithCarousel() {
               <h1 className="text-xl md:text-2xl mb-4 drop-shadow-md">
                 {data.text1}
               </h1>
-              <p className="text-4xl md:text-6xl font-bold drop-shadow-lg">
+              <p className="text-4xl md:text-6xl font-abril font-bold drop-shadow-lg">
                 {data.text2}
               </p>
             </div>
