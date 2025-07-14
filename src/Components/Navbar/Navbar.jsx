@@ -17,9 +17,15 @@ const NavLinks = ({ vertical = false, onClick = () => {} }) => {
       <NavLink to="/about" onClick={onClick}>
         About
       </NavLink>
-      <NavLink to="/portal" onClick={onClick}>
-        Portal
-      </NavLink>
+      <a
+  href="/portal"
+  target="_blank"
+  rel="noopener noreferrer"
+  onClick={onClick}
+>
+  Portal
+</a>
+
       <NavLink to="/contact" onClick={onClick}>
         Contact
       </NavLink>
