@@ -2,12 +2,12 @@ import { Facebook, Phone, Mail, MessageSquare } from "lucide-react";
 import logo from "../../assets/logo.png"; // update path as needed
 
 
-const Footer = ({bgColor = 'bg-[#8B0000]'}) => {
+const Footer = ({bgColor = 'bg-[#800020]'}) => {
   return (
     <footer className={`${bgColor} text-white pt-10`}>
-      {/* Main Footer Grid */}
+ 
       <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 pb-10">
-        {/* Logo and Intro */}
+   
         <div className="flex flex-col">
           <div className="flex items-center gap-4 mb-4">
             <img src={logo} alt="FIDIF logo" className="h-16" />
@@ -25,7 +25,6 @@ const Footer = ({bgColor = 'bg-[#8B0000]'}) => {
           </p>
         </div>
 
-        {/* Links */}
         <div>
           <h3 className="font-semibold text-lg mb-4">Useful Links</h3>
           <ul className="space-y-2">
@@ -47,7 +46,6 @@ const Footer = ({bgColor = 'bg-[#8B0000]'}) => {
           </ul>
         </div>
 
-        {/* Socials */}
         <div>
           <h3 className="font-semibold text-lg mb-4">Socials</h3>
           <ul className="space-y-2">
@@ -60,7 +58,6 @@ const Footer = ({bgColor = 'bg-[#8B0000]'}) => {
           </ul>
         </div>
 
-        {/* Contact */}
         <div>
           <h3 className="font-semibold text-lg mb-4">Contact Us</h3>
           <ul className="space-y-2 text-sm">
@@ -77,7 +74,6 @@ const Footer = ({bgColor = 'bg-[#8B0000]'}) => {
         </div>
       </div>
 
-      {/* Footer Bottom */}
       <div className={`bg-[#800020] border-t border-white/20 py-4 text-sm text-center md:text-left flex flex-col md:flex-row justify-between items-center gap-2 px-4`}>
         <p>Powered by Arcadia</p>
         <p>© 2025 Fidif School Complex. All rights reserved.</p>

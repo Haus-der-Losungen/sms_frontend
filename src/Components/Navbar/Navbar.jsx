@@ -7,7 +7,7 @@ const NavLinks = ({ vertical = false, onClick = () => {} }) => {
   const layout = vertical
     ? "flex-col items-start gap-6 px-6 py-4"
     : "flex-row gap-6";
-  const textColor = vertical ? "text-black" : "text-white";
+  const textColor = vertical ? "text-gray-700" : "text-white";
 
   return (
     <div className={`flex ${layout} ${textColor} font-medium text-lg`}>
@@ -79,7 +79,7 @@ const Navbar = () => {
       >
         <div className="flex justify-end p-4">
           <button onClick={toggleNavbar}>
-            <X className="text-black" size={28} />
+            <X className="text-gray-700" size={28} />
           </button>
         </div>
 
