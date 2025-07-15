@@ -2,7 +2,7 @@ import { Facebook, Phone, Mail, MessageSquare } from "lucide-react";
 import logo from "../../assets/logo.png"; // update path as needed
 
 
-const Footer = ({bgColor = 'bg-[#8B0000]'}) => {
+const Footer = ({bgColor = 'bg-[#800020]'}) => {
   return (
     <footer className={`${bgColor} text-white pt-10`}>
  
@@ -75,7 +75,7 @@ const Footer = ({bgColor = 'bg-[#8B0000]'}) => {
       </div>
 
       {/* Footer Bottom */}
-      <div className={`bg-[#800020] border-t border-white/20 py-4 text-sm text-center md:text-left flex flex-col md:flex-row justify-between items-center gap-2 px-4 font-abhaya`}>
+      <div className={`bg-[#560015] border-t border-white/20 py-4 text-sm text-center md:text-left flex flex-col md:flex-row justify-between items-center gap-2 px-4 font-abhaya`}>
         <p>Powered by Arcadia</p>
         <p>© 2025 Fidif School Complex. All rights reserved.</p>
         

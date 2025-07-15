@@ -69,9 +69,9 @@ function AboutUs() {
          <section id="who-are-we" className="py-12 px-4 bg-gray-50">
               <div className="max-w-7xl mx-auto">
              
-                <div className="flex flex-col md:flex-row items-start gap-2">
+                <div className="flex flex-col md:flex-row items-stretch gap-2">
                       
-                   <div className="text-left md:border-r-4 md:border-[#800020] pr-1">
+                   <div className="md:w-1/7 text-left md:border-r-4 md:border-[#800020] pr-1">
                      <h2 className="text-5xl sm:text-6xl md:text-7xl font-abril font-bold text-[#800020] leading-none">
                       <span className="block">Who</span>
                       <span className="block">Are</span>
@@ -81,7 +81,7 @@ function AboutUs() {
 
                   
                    <div className="md:w-2/3 pl-4">
-                     <p className="text-lg text-gray-700 leading-relaxed">
+                     <p className="text-2xl text-gray-700 leading-relaxed">
                         Founded in 2011, Fidif School Complex is a respected educational institution
                         located in Teiman Abokobi, providing quality Pre School, Primary, and Junior
                         High School (JHS) education. We are committed to nurturing well-rounded
@@ -89,7 +89,7 @@ function AboutUs() {
                         academic excellence with strong values. Our supportive learning environment
                         is designed to build a solid foundation for future success.
                      </p>
-                     <p className="text-lg text-gray-700 leading-relaxed">
+                     <p className="text-2xl text-gray-700 leading-relaxed">
                         With small class sizes and a team of experienced, GES certified teachers,
                         Fidif emphasizes both hands-on learning and deep theoretical understanding.
                         We focus on developing confident, curious, and capable learners who go on to
@@ -113,15 +113,15 @@ function AboutUs() {
              <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                  <div className="p-6 rounded-lg shadow-md bg-white border border-gray-200">
                      <h3 className="text-4xl font-semibold text-[#800020] mb-3 underline font-abril">Our Vision</h3>
-                     <p className="text-gray-700">To provide excellent second-cycle education</p>
+                     <p className="text-2xl text-gray-700">To provide excellent second-cycle education</p>
                   </div>
                   <div className="p-6 rounded-lg shadow-md bg-white border border-gray-200">
                       <h3 className="text-4xl font-semibold text-[#800020] mb-3 underline font-abril">Our Mission</h3>
-                      <p className="text-gray-700">To form holistic and responsible citizens for the society through excellent teaching and learning, using state-of-the-art facilities, highly qualified and motivated staff.</p>
+                      <p className="text-2xl text-gray-700">To form holistic and responsible citizens for the society through excellent teaching and learning, using state-of-the-art facilities, highly qualified and motivated staff.</p>
                   </div>
                   <div className="p-6 rounded-lg shadow-md bg-white border border-gray-200">
                        <h3 className="text-4xl font-semibold text-[#800020] mb-3 underline font-abril">Our Core Values</h3>
-                       <p className="text-gray-700 ">Commitment, Dedication, Team Work, Integrity, Excellence</p>
+                       <p className="text-2xl text-gray-700 ">Commitment, Dedication, Team Work, Integrity, Excellence</p>
                   </div>
               </div>
           </section>
@@ -153,14 +153,14 @@ function AboutUs() {
               <h2 className="text-3xl sm:text-4xl font-bold text-[#800020] mb-6 font-abril">Our Community</h2>
               
               <div className="text-left mb-12">
-                <p className="text-lg text-gray-700 leading-relaxed mb-4">
+                <p className="text-2xl text-gray-700 leading-relaxed mb-4">
                   At Fidif School Complex, we foster a respectful and supportive environment
                   where teachers, students, and parents work together as one community. Our
                   teachers serve as mentors and role models, guiding students with care and
                   integrity, while students are encouraged to respect one another and contribute
                   positively to school life.
                 </p>
-                <p className="text-lg text-gray-700 leading-relaxed">
+                <p className="text-2xl text-gray-700 leading-relaxed">
                   Parents play an active role through open communication and participation in
                   school activities. This strong partnership between home and school builds
                   trust, harmony, and shared responsibility. Together, we create a nurturing
