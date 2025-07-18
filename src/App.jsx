@@ -9,6 +9,10 @@ import Footer from "./Components/Footer";
 import PortalLogin from "./Pages/PortalLogin"; 
 import Overview from "./Components/Overview";
 import AboutUs from "./Pages/AboutUs";
+import AdminDashboard from "./Pages/dashboards/AdminDashboard";
+import StudentDashboard from "./Pages/dashboards/StudentDashboard";
+import StaffDashboard from "./Pages/dashboards/StaffDashboard";
+import ProtectedRoute from "./Components/auth/ProtectedRoute";
 
 const App = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -45,6 +49,23 @@ const App = () => {
 
         <Route path="/portal" element={<PortalLogin />} />
         <Route path="/about" element={<AboutUs />} />
+        <Route path="/portal/admin-dashboard" element={
+          <ProtectedRoute>
+            <AdminDashboard />
+          </ProtectedRoute>
+        } />
+       
+        <Route path="/portal/staff-dashboard" element={
+          <ProtectedRoute>
+            <StaffDashboard />
+          </ProtectedRoute>
+        } />
+       
+        <Route path="/portal/student-dashboard" element={
+          <ProtectedRoute>
+            <StudentDashboard />
+          </ProtectedRoute>
+        } />
        
       </Routes>
       {!isPortalPage && <Footer />}

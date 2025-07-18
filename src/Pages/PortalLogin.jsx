@@ -5,6 +5,8 @@ import logo2 from "../assets/logo2.png";
 
 const PortalLogin = () => {
   const [role, setRole] = useState("Student");
+  const [userId, setUserId] = useState("")
+  const [password, setPassword] = useState("")
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
@@ -15,24 +17,51 @@ const PortalLogin = () => {
       password,
       role
     };
+
+    console.log(credentials)
   
     try {
-      const response = await fetch("", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(credentials),
-      });
+      // const response = await fetch("", {
+      //   method: "POST",
+      //   headers: {
+      //     "Content-Type": "application/json",
+      //   },
+      //   body: JSON.stringify(credentials),
+      // });
+
+      //mimicking sign in on front end
+     
+      localStorage.setItem("credentials", JSON.stringify(credentials))
   
-      const data = await response.json();
+      // const data = await response.json();
+     
   
-      if (response.ok) {
+      if (1234 == credentials.userId && 'password' === credentials.password) {
         // Save token or user info if returned
-        localStorage.setItem("token", data.token);
-        navigate("/portal/dashboard");
+        // localStorage.setItem("token", data.token);
+
+        switch(credentials.role.toLowerCase()){
+          case("staff"):
+            navigate("/portal/staff-dashboard")
+            break;
+          case("student"):
+            navigate("/portal/student-dashboard")
+            break;
+          case("admin"):
+            navigate("/portal/admin-dashboard")
+            break;
+          default:
+            navigate("portal/admin-dashboard")
+        }
+
+        //logic to check role
+        //push to appropriate route
+
+
+        // navigate("/portal/admin-dashboard");
       } else {
-        alert(data.message || "Login failed");
+        alert( "Login failed");
+        throw("Failed")
       }
     } catch (error) {
       console.error("Error logging in:", error);
@@ -105,6 +134,7 @@ const PortalLogin = () => {
               placeholder="User ID"
               className="w-full border border-gray-400 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-gray-500"
               required
+              onChange={(e) => setUserId(e.target.value)}
             />
 
             <input
@@ -112,6 +142,7 @@ const PortalLogin = () => {
               placeholder="Password"
               className="w-full border border-gray-400 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-gray-500"
               required
+              onChange={(e) => setPassword(e.target.value)}
             />
 
             <p className="text-xs text-gray-700">
