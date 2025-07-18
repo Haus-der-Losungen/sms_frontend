@@ -39,7 +39,7 @@ const Values = () => {
           <div className="absolute text-center inset-0 bg-[#800020]/50" />
           <div className="relative flex flex-col items-center ">
             <div className="mb-2">{card.icon}</div>
-            <p className="text-lg md:text-xl font-semibold">{card.text}</p>
+            <p className="text-lg md:text-xl font-semibold font-abril">{card.text}</p>
           </div>
         </div>
       ))}
